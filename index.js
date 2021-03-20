@@ -134,5 +134,9 @@ module.exports = {
 		}
 
 		return true;
+	},
+
+	escape(prop) {
+		return prop.replace(/\./g, '\\.')
 	}
 };
